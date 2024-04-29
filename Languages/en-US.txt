@@ -1,0 +1,6 @@
+#Utils
+command.outdated=The command is outdated.
+command.no_permission=You do not have permission.
+
+#Description
+command.description.ping=Sends back a PONG.

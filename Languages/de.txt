@@ -1,0 +1,6 @@
+#Utils
+command.outdated=Der Befehl ist veraltet.
+command.no_permission=Du hast keine Berechtigung.
+
+#Description
+command.description.ping=Sendet ein PONG zurück.
