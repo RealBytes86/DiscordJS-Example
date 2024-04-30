@@ -13,15 +13,7 @@ module.exports = {
     execute: async(ctx, client) => {
 
         if(ctx.isChatInputCommand()) {
-
-            const subCommand = ctx.options.getSubcommand(false);
-            let command = null;
-
-            if(subCommand) {
-                command = client.commands.get(`${ctx.commandName}.${subCommand}`)
-            } else {
-                command = client.commands.get(`${ctx.commandName}`)
-            }
+            command = client.commands.get(`${ctx.commandName}`)
 
             getLogger().info(`${chalk.yellow("[Commands]")} ${chalk.green(`${ctx.member.user.username} requested the ${ctx.commandName}.`)}`);
 
