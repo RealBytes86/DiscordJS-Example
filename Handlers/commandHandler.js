@@ -28,7 +28,7 @@ async function commandHandler(client) {
         }
     }
 
-    const rest = new REST({version: "10"}).setToken(configs.TOKEN);
+    const rest = new REST().setToken(configs.TOKEN);
     await rest.put(Routes.applicationCommands(configs.APP_ID), {body: saveSlashCommands});
 } 
 
