@@ -34,8 +34,11 @@ const client = new Client({
 
 client.commands = new Collection()
 
-client.login(configs.TOKEN).then(() => {
+async function main() {
     initLanguage()
     eventHandler(client);
     commandHandler(client);
-})
+    await client.login(configs.TOKEN)
+}
+
+main()
